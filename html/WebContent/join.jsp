@@ -9,7 +9,7 @@
 
 <script type="text/javascript">
 var tcounter;
-var t1;
+var t1;2ghh
 var auth_cnt = 0;
 var agree_cnt = 4;
 var set_num;
