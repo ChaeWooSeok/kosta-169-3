@@ -1,8 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
 	pageEncoding="EUC-KR"%>
+<%@ page import="java.util.Date"%>
+<%@ page import="java.text.SimpleDateFormat"%>
+
 
 <!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
 <html xmlns='http://www.w3.org/1999/xhtml'>
+
 <head>
 <meta http-equiv='Content-Type' content='text/html; charset=euc-kr'>
 	<meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1">
@@ -34,6 +38,9 @@
 						<script type="text/javascript"
 							src="/duo/common/js/include_ex_script.js"></script>
 						<script type="text/javascript">
+							
+							
+						
 						
 							
 						 	 function check_scroll(now_position) {
@@ -127,13 +134,35 @@
 						 	        this.value = number_format(val);
 						 	    });
 						 	}); 
-							
+						 	
+						 	function leadingZeros(n, digits) {
+						 		  var zero = '';
+						 		  n = n.toString();
+
+						 		  if (n.length < digits) {
+						 		    for (i = 0; i < digits - n.length; i++)
+						 		      zero += '0';
+						 		  }
+						 		  return zero + n;
+						 		}
+
+
 						 
 							function click_sub(num){
 								
+								 var d = new Date();
+								 var sysDate =
+									    leadingZeros(d.getFullYear(), 4) + '-' +
+									    leadingZeros(d.getMonth()+1, 2) + '-' +
+									    leadingZeros(d.getDate(), 2); 
+
+								 var endDate = 
+									 	leadingZeros(d.getFullYear()+1, 4) + '-' +
+									    leadingZeros(d.getMonth()+1, 2) + '-' +
+									    leadingZeros(d.getDate()-1, 2); 
+								
 								 if(num==1){
 								tab_scroll_move('marry_fee1');
-								
 								$("#sub_1").removeClass("other");
 								$("#sub_1").addClass("on");
 								$("#sub_2").addClass("other");
@@ -143,8 +172,9 @@
 								$(".fee-type2").removeClass("fee-type_click");
 								
 								 $("#product").val("클래식 등급"); 
-								 $("#price").val(number_format('1500000')); 
-								 
+								 $("#price").val(number_format('1500000'));
+							 	 $("#usingterm").val(sysDate +" ~ "+ endDate); 
+						 
 									  
 								}
 								
@@ -161,7 +191,8 @@
 								
 								
 								$("#product").val("노블레스 등급"); 
-								 $("#price").val(number_format('2700000')); 
+								$("#price").val(number_format('2700000')); 
+								$("#usingterm").val(sysDate +" ~ "+ endDate); 
 								}
 								
 								if(num==3){

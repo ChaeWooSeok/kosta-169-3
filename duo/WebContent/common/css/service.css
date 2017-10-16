@@ -1741,16 +1741,17 @@
 #membershipfee .content_box .purchase .fee-type1 span.box { display:block; float:left; margin:0 0 0 -1px; padding:0 0 0 40px; width:400px; height:351px; border:1px solid #ffffff; background:#ffffff;}
 #membershipfee .content_box .purchase .fee-type1 span.cell { display:table-cell; width:448px; height:280px; vertical-align:middle; color:#676767; font-size:19px; }
 #membershipfee .content_box .purchase .fee-type1 span.cell label{float: left; width: 110px;}
-#membershipfee .content_box .purchase .fee-type1 span.cell input, select{ 
-	width:150px;
+ #membershipfee .content_box .purchase .fee-type1 span.cell input, select{ 
+	width:200px;
     margin-bottom:5px;
     line-height:18px;
+
    	font-size:16px;
     padding:2px 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    border:1px solid #CCC;}
+    border:1px solid #CCC; } 
 
 #membershipfee .content_box .purchase .fee-type1 span.cell .term, #membershipfee .content_box .marry_fee2 .fee-type2 span.cell .term, #membershipfee .content_box .marry_fee2 .fee-type3 span.cell .term { display:block; float:left; width:100%; height:33px; background:url(/duo/service/img/st_122.png) left center no-repeat; padding:0 0 0 50px; line-height:31px; }
 #membershipfee .content_box .purchase .fee-type1 span.cell .purbtn { position:relative; visibility:visible; top:200px; display:block; width:330px; height:50px; margin:0 auto 90px; background:url(/duo/service/img/st_119.png) center top no-repeat; font-size:0; line-height:100%; }
