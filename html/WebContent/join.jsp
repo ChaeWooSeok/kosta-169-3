@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
-<meta http-equiv='Content-Type' content='text/html; charset=euc-kr'><meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1"><title>듀오 회원가입</title>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'><meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1"><title>듀오 회원가입</title>
 
 <link rel="stylesheet" type="text/css" href="/com_member/css/membership.css" />
 <script type="text/javascript" src="/html/common/js/jquery-1.11.0.min.js"></script>
